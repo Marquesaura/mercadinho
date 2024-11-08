@@ -1,9 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2 {
+header {
+    background-color: #4cae4c;
+    padding: 20px;
+}
+
+h1,
+h2 {
     color: #333;
 }
 
@@ -35,4 +42,62 @@ button:hover {
 
 div {
     margin-top: 20px;
+}
+
+#secoes li {
+    list-style-type: none;
+}
+
+.listras {
+    width: 25px;
+}
+
+img {
+    width: 150px;
+}
+
+.princi_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: -30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 90px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+#secoes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin: 10px;
+
+}
+
+
+.card {
+    background-color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
+    min-width: 140px;
+    height: 200px;
+    border-radius: 15px;
+    scroll-snap-type: both mandatory;
+}
+
+@media (min-width:1330px) {
+    .conteudo {
+        justify-content: center;
+    }
 }
