@@ -69,6 +69,7 @@ img {
     overflow-y: hidden;
     white-space: nowrap;
     padding-left: 90px;
+    padding-right: 90px;
 
 }
 
@@ -90,8 +91,8 @@ ul {
     background-color: #f1f1f1;
     margin: 10px;
     text-align: center;
-    min-width: 140px;
-    height: 200px;
+    min-width: 210px;
+    height: 250px;
     border-radius: 15px;
     scroll-snap-type: both mandatory;
 }
