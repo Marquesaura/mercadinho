@@ -1,94 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 body {
-    font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
-    margin-left: 40%;
-    background-color: azure;
-}
-header{
-    background-color:rgb(50, 150, 153) ;
-}
-.principal h1 {
-    color: rgb(28, 58, 45);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.principal {
-    background-color: rgb(50, 150, 153);
-    border-radius: 15px;
+header {
+    background-color: #4cae4c;
     padding: 20px;
-    width: 400px;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
 }
 
-select,
-button {
-    border-radius: 10px;
-}
-#item{
-    width: 300px;
-    height: 30px;
-}
-option {
-    align-items: center;
+h1,
+h2 {
+    color: #333;
 }
 
-#adicionar {
-    width: 150px;
-    height: 30px;
-    background-color: azure;
-    margin-top: 15px;
+form {
+    margin-bottom: 20px;
 }
 
-#adicionar:hover {
-    background-color: white;
+label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
-.itens {
-    background-color: gray;
-    border-radius: 15px;
-    padding: 20px;
-    width: 400px;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-
-
-.itens ul {
-    background-color: white;
-    border-radius: 10px;
+input {
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 button {
-    width: 150px;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
-#adicionar-prod{
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+div {
     margin-top: 20px;
 }
-.outro-prod button{
-    height: 25px;
-    font-size: 11px;
-    margin-top: 10px;
-    width: 125px;
-    background-color: rgb(170, 252, 255);
-    padding: 1px;
+
+#secoes li {
+    list-style-type: none;
 }
 
-.outro-prod input{
-    height: 25px;
-    font-size: 11px;
-    margin-top: 10px;
+.listras {
+    width: 25px;
+}
+
+img {
     width: 150px;
-    border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    body{
-        margin: 40px;
-    }
-    .principal, .itens{
-        width: 300px;
+.princi_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: -30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 90px;
+    padding-right: 90px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+#secoes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin: 10px;
+
+}
+
+
+.card {
+    background-color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
+    min-width: 210px;
+    height: 250px;
+    border-radius: 15px;
+    scroll-snap-type: both mandatory;
+}
+
+@media (min-width:1330px) {
+    .conteudo {
+        justify-content: center;
     }
 }
