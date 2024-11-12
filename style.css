@@ -102,3 +102,32 @@ ul {
         justify-content: center;
     }
 }
+
+@media (max-width:1366px) {
+    .princi-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: -50px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        overflow-x: scroll 1366px;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-left: 20px;
+        padding-right: -20px;
+        max-width: 1300px;
+    }
+    .card {
+        background-color: #f1f1f1;
+        margin: 5px;
+        text-align: center;
+        min-width: 170px;
+        height: 200px;
+        border-radius: 15px;
+        scroll-snap-type: both mandatory;
+    }
+    
+}
